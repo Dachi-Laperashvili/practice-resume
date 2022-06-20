@@ -77,9 +77,6 @@ address {
     column-count: 3;
 }
 
-#contact {
-    display: none;
-}
 
 @media all and (min-width: 630px) {
     main {
