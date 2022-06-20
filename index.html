@@ -9,86 +9,96 @@
     <meta name="Practice CV" content="Dachi Laperashvili's Resume">
     <title>Dachi Laperashvili's Resume</title>
     <style>
-        @media print {
-            @page {
-                size: letter;
-            }
+        @import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
 
-            html,
-            body {
-                font-size: 14px;
-                color: #000
-            }
+        html,
+        body {
+            background-color: #ccc;
+            font-family: Quicksand, Arial, Verdana, sans-serif;
+            font-size: 14px;
+            color: #000;
+        }
 
+        main {
+            background-color: #fff;
+            box-sizing: border-box;
+            margin: 2rem auto;
+            padding: 2.75rem;
+            position: relative;
+        }
+
+        h1 {
+            margin: 0;
+            color: #000;
+            font-size: 2.5rem;
+            line-height: 2rem;
+            font-weight: normal;
+        }
+
+        h2 {
+            margin: 0;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-top: 1.5rem;
+            color: #000;
+        }
+
+        p {
+            font-size: 1.3rem;
+            margin: 0;
+            margin-top: 0.75rem;
+        }
+
+        a {
+            color: #369;
+            font-weight: bold;
+        }
+
+        a:hover,
+        a:focus {
+            color: #36c;
+            text-decoration: none;
+        }
+
+        address {
+            font-style: normal;
+            font-weight: 600;
+            float: right;
+        }
+
+        .no-bullets {
+            list-style: none;
+            font-weight: bold;
+            padding-left: 0;
+            color: #000;
+        }
+
+        #contact-info,
+        #gmail {
+            text-align: right;
+            font-size: 1rem;
+            color: #369;
+        }
+
+        #phone {
+            font-size: 1.5rem;
+        }
+
+        #p-languages {
+            column-count: 3;
+        }
+
+        #contact {
+            display: none;
+        }
+
+        @media all and (min-width: 630px) {
             main {
-                background-color: #fff;
-                box-sizing: border-box;
-                margin: 2rem auto;
-                padding: 2.75rem;
-                position: relative;
+                max-width: 600px;
             }
 
-            h1 {
-                margin: 0;
-                color: #000;
-                font-size: 2.5rem;
-                line-height: 2rem;
-                font-weight: normal;
-            }
-
-            h2 {
-                margin: 0;
-                font-weight: bold;
-                font-size: 1.3rem;
-                margin-top: 1.5rem;
-                color: #000;
-            }
-
-            p {
-                font-size: 1.3rem;
-                margin: 0;
-                margin-top: 0.75rem;
-            }
-
-            a {
-                text-decoration: none;
-                color: #000;
-                font-weight: bold;
-            }
-
-            address {
-                font-style: normal;
-                font-weight: 600;
-            }
-
-            .no-bullets {
-                list-style: none;
-                font-weight: bold;
-                padding-left: 0;
-                color: #000;
-            }
-
-            #contact,
-            #gmail {
-                text-align: right;
-                font-size: 1rem;
-                color: #395;
-            }
-
-            #city {
-                font-size: 1.15rem;
-            }
-
-            #phone {
-                font-size: 1.5rem;
-            }
-
-            #p-languages {
-                column-count: 3;
-            }
-
-            #contact {
-                display: none;
+            #contact-info {
+                font-size: 0.9rem;
             }
         }
     </style>
@@ -99,18 +109,18 @@
         <div>
             <header>
                 <h1 itemprop="name">Dachi Laperashvili</h1>
+                <address id="contact-info">
+                    <p><span itemprop="telephone">+995 577 34 37 08</span></p>
+                    <div itemprop="email">
+                        <a href="mailto:dachi.laferashvili@gmail.com" id="gmail">dachi.laferashvili@gmail.com</a>
+                    </div>
+                    <p itemprop="address">City Tbilisi,Georgia</p>
+                </address>
                 <p itemprop="description">
                     <span itemprop="jobTitle">Beginner Web Developer</span> who can create websites with
                     <span itemprop="knowsAbout">Basic HTML/CSS/JS</span>,
                     <span itemprop="seeks">and wants to learn more and gain experience.</span>
                 </p>
-                <address id="contact-info">
-                    <p><span itemprop="telephone">+995 577 34 37 08</span></p>
-                    <div itemprop="email">
-                        <a href="mailto:dachi.laferashvili@gmail.com">dachi.laferashvili@gmail.com</a>
-                    </div>
-                    <p itemprop="address">City Tbilisi,Georgia</p>
-                </address>
             </header>
             <section id="experience">
                 <h2>EXPERIENCE</h2>
@@ -152,15 +162,6 @@
                     <li><a href="https://codepen.io/dachi123">CodePen</a></li>
                 </ul>
             </section>
-        </div>
-        <div>
-            <address id="contact" class="contact-2">
-                <div>
-                    <p id="phone">+995 577 34 37 08</p>
-                    <a href="mailto:dachi.laferashvili@gmail.com" id="gmail">dachi.laferashvili@gmail.com</a>
-                    <p itemprop="address" id="city">City Tbilisi,Georgia</p>
-                </div>
-            </address>
         </div>
     </main>
 </body>
