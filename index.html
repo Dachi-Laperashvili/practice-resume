@@ -7,92 +7,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta author="Dachi Laperashvili">
     <meta name="Practice CV" content="Dachi Laperashvili's Resume">
-    <title>Dachi Laperashvili Resume</title>
+    <title>Dachi Laperashvili's Resume</title>
     <style>
-        @import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
+        @media print {
+            @page {
+                size: letter;
+            }
 
-        html,
-        body {
-            background-color: #ccc;
-            font-family: Quicksand, Arial, Verdana, sans-serif;
-            font-size: 14px;
-            color: #444
-        }
+            html,
+            body {
+                font-size: 14px;
+                color: #000
+            }
 
-        main {
-            background-color: #fff;
-            box-sizing: border-box;
-            margin: 2rem auto;
-            padding: 2.75rem;
-            position: relative;
-        }
+            main {
+                background-color: #fff;
+                box-sizing: border-box;
+                margin: 2rem auto;
+                padding: 2.75rem;
+                position: relative;
+            }
 
-        h1 {
-            margin: 0;
-            color: #000;
-            font-size: 2.5rem;
-            line-height: 2rem;
-            font-weight: normal;
-        }
+            h1 {
+                margin: 0;
+                color: #000;
+                font-size: 2.5rem;
+                line-height: 2rem;
+                font-weight: normal;
+            }
 
-        h2 {
-            margin: 0;
-            font-weight: bold;
-            font-size: 1.3rem;
-            margin-top: 1.5rem;
-            color: #000;
-        }
+            h2 {
+                margin: 0;
+                font-weight: bold;
+                font-size: 1.3rem;
+                margin-top: 1.5rem;
+                color: #000;
+            }
 
-        p {
-            font-size: 1.3rem;
-            margin: 0;
-            margin-top: 0.75rem;
-        }
+            p {
+                font-size: 1.3rem;
+                margin: 0;
+                margin-top: 0.75rem;
+            }
 
-        a {
-            color: #369;
-            font-weight: bold;
-        }
+            a {
+                text-decoration: none;
+                color: #000;
+                font-weight: bold;
+            }
 
-        a:hover,
-        a:focus {
-            color: #36c;
-            text-decoration: none;
-        }
+            address {
+                font-style: normal;
+                font-weight: 600;
+            }
 
-        address {
-            font-style: normal;
-            font-weight: 600;
-        }
+            .no-bullets {
+                list-style: none;
+                font-weight: bold;
+                padding-left: 0;
+                color: #000;
+            }
 
-        .no-bullets {
-            list-style: none;
-            font-weight: bold;
-            padding-left: 0;
-            color: #000;
-        }
+            #contact,
+            #gmail {
+                text-align: right;
+                font-size: 1rem;
+                color: #395;
+            }
 
-        #contact,
-        #gmail {
-            text-align: right;
-            font-size: 1rem;
-            color: #395;
-        }
+            #city {
+                font-size: 1.15rem;
+            }
 
-        #city {
-            font-size: 1.15rem;
-        }
+            #phone {
+                font-size: 1.5rem;
+            }
 
-        #phone {
-            font-size: 1.5rem;
-        }
+            #p-languages {
+                column-count: 3;
+            }
 
-        #p-languages {
-            column-count: 3;
-        }
-
-        #contact {
-            display: none;
+            #contact {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -158,11 +155,11 @@
         </div>
         <div>
             <address id="contact" class="contact-2">
-                <p id="phone">+995 577 34 37 08</p>
-                <div itemprop="email">
+                <div>
+                    <p id="phone">+995 577 34 37 08</p>
                     <a href="mailto:dachi.laferashvili@gmail.com" id="gmail">dachi.laferashvili@gmail.com</a>
+                    <p itemprop="address" id="city">City Tbilisi,Georgia</p>
                 </div>
-                <p itemprop="address" id="city">City Tbilisi,Georgia</p>
             </address>
         </div>
     </main>
